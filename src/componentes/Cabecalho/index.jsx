@@ -25,14 +25,13 @@ const Cabecalho = () => {
     }
     
     useEffect(() => {
-        
+
         let larguraTela = window.innerWidth;
         if (larguraTela <= 1024) {
             setMenuMobile(false)
         } else {
             setMenuMobile(true)
         }
-        
         const tamanhoTela = () => {
             if (window.matchMedia("(max-width: 1024px)").matches) {
                 setMenuMobile(false)
