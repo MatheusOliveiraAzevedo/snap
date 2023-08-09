@@ -25,10 +25,8 @@ const Navbar = () => {
     function checadoRecurso (evento) {
 
         if (evento.target.checked) {
-            console.log("menu aberto")
             setRecursos(true)
         } else {
-            console.log("menu fechado")
             setRecursos(false)
         }
 
