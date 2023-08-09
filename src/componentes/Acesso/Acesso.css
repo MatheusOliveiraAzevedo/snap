@@ -1,0 +1,49 @@
+
+
+.acesso {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.botao {
+    height: 40px;
+    width: 100px;
+    background-color: inherit;
+    font-family: 'Epilogue', sans-serif;
+    color: var(--cinzaMedio);
+    border: 2px solid var(--cinzaMedio);
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botaoLogin {
+    border: none;
+}
+
+.botaoRegistro {
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1024px) {
+    .acesso {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .acesso .botao {
+        width: 90%;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    
+}

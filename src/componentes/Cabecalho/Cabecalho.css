@@ -1,0 +1,93 @@
+
+.cabecalho {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+
+.cabecalho .logo {
+    align-self: center;
+}
+
+.cabecalho .menuInteracoes {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+}
+
+.cabecalho .menuMobile {
+    display: none;
+}
+
+.cabecalho .botaoFechaMenu {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .cabecalho {
+        position: relative;
+        padding: 30px 30px 0 30px;
+    }
+    
+    .cabecalho .menuMobile {
+        display: block;
+        justify-self: end;
+    }
+
+    #menuMobile {
+        display: none;
+    }
+
+    .cabecalho .menuFundo {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .cabecalho .menuInteracoes {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: var(--quaseBranco);
+        height: 100%;
+        width: 30%;
+        right: 0;
+        top: 0;
+    }
+
+    .cabecalho .botaoFechaMenu {
+        display: block;
+        width: 20%;
+        height: auto;
+        align-self: flex-end;
+        background-color: inherit;
+        border: none;
+        margin: 10px;
+    }
+
+    .cabecalho .logo {
+        margin-top: 10px;
+        width: 140%;
+    }
+   
+}
+
+@media screen and (max-width:430px) {
+    
+    .cabecalho .menuInteracoes {
+        width: 75%;
+
+    }
+
+    .cabecalho {
+        grid-template-columns: 25% 1fr;
+        padding: 30px;
+    }
+
+    .cabecalho .logo {
+        width: 100%;
+    }
+
+}
+
