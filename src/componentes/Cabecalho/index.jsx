@@ -40,7 +40,7 @@ const Cabecalho = () => {
             }
         }
         window.addEventListener("resize", tamanhoTela)
-    })
+    }, [])
 
     return(
         <div className='cabecalho'>
@@ -48,7 +48,7 @@ const Cabecalho = () => {
             
             <div className='menuMobile'>
                 <label htmlFor="menuMobile"><AiOutlineMenu size={40}/></label>
-                <input onClick={mostraMenu} type="checkbox" id='menuMobile' checked={menuMobile} />
+                <input onChange={mostraMenu} type="checkbox" id='menuMobile' checked={menuMobile} />
             </div>
             
             {menuMobile && <div className='menuFundo'>
